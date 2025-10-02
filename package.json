@@ -1,0 +1,30 @@
+{
+  "name": "three-musketeers-language",
+  "displayName": "Three Musketeers Language",
+  "description": "Highlighting e suporte para a linguagem Three Musketeers",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RafaelTomazGraciano/three-musketeers-vscode.git"
+  },
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "three-musketeers", 
+        "aliases": ["Three Musketeers", "3M"], 
+        "extensions": [".3m"], 
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "three-musketeers", 
+        "scopeName": "source.three-musketeers", 
+        "path": "./syntaxes/three-musketeers.tmLanguage.json" 
+      }
+    ]
+  }
+}
